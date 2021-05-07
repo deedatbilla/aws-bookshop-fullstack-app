@@ -81,16 +81,6 @@
     }
   },
   "function": {
-    "bookshopeEmailService": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "testapi": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "testapi2": {
       "build": true,
       "providerPlugin": "awscloudformation",

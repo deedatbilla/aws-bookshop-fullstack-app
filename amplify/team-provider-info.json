@@ -22,17 +22,9 @@
         }
       },
       "function": {
-        "bookshopeEmailService": {
-          "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
-          "s3Key": "amplify-builds/bookshopeEmailService-372f3657586c5a4f7467-build.zip"
-        },
-        "testapi": {
-          "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
-          "s3Key": "amplify-builds/testapi-596c513352506863394e-build.zip"
-        },
         "testapi2": {
           "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
-          "s3Key": "amplify-builds/testapi2-695a61346f4c3346436e-build.zip"
+          "s3Key": "amplify-builds/testapi2-4b764632714165425848-build.zip"
         }
       }
     }
