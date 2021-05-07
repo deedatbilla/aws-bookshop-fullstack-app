@@ -1,0 +1,40 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bookshopappclientsid-dev-122005-authRole",
+      "UnauthRoleArn": "arn:aws:iam::254961545491:role/amplify-bookshopappclientsid-dev-122005-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::254961545491:role/amplify-bookshopappclientsid-dev-122005-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
+      "UnauthRoleName": "amplify-bookshopappclientsid-dev-122005-unauthRole",
+      "StackName": "amplify-bookshopappclientsid-dev-122005",
+      "StackId": "arn:aws:cloudformation:us-east-1:254961545491:stack/amplify-bookshopappclientsid-dev-122005/672f38d0-ae65-11eb-acef-12cd418968c5",
+      "AmplifyAppId": "d1cr5rb2jhy793"
+    },
+    "categories": {
+      "auth": {
+        "bookshopappclientsidc15849ad": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1cr5rb2jhy793",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "bookshopeEmailService": {
+          "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
+          "s3Key": "amplify-builds/bookshopeEmailService-372f3657586c5a4f7467-build.zip"
+        },
+        "testapi": {
+          "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
+          "s3Key": "amplify-builds/testapi-596c513352506863394e-build.zip"
+        },
+        "testapi2": {
+          "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
+          "s3Key": "amplify-builds/testapi2-695a61346f4c3346436e-build.zip"
+        }
+      }
+    }
+  }
+}

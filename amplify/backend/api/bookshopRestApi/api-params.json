@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/sendmail",
+      "lambdaFunction": "bookshopeEmailService",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/sendmail"
+    }
+  ],
+  "resourceName": "bookshopRestApi",
+  "apiName": "bookshopRestApi",
+  "functionArns": [
+    {
+      "lambdaFunction": "bookshopeEmailService"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-bookshopappclientsid-dev-122005-authRole",
+    "unAuthRoleName": "amplify-bookshopappclientsid-dev-122005-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "bookshopeEmailService",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

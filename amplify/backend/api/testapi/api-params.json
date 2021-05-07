@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "testapi",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "testapi",
+  "apiName": "testapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "testapi"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-bookshopappclientsid-dev-122005-authRole",
+    "unAuthRoleName": "amplify-bookshopappclientsid-dev-122005-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "testapi",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

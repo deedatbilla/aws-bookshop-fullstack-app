@@ -1,0 +1,26 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: wrap;
+  /* background-color: yellow; */
+  
+}
+
+.bookCard {
+  
+  height: 100px;
+  /* flex-grow: 1; */
+  width: 100px;
+  /* background-color: red; */
+  margin: 12px;
+
+}
+
+.bookCardContent{
+    display: flex;
+    flex-direction: column;
+
+
+}
+

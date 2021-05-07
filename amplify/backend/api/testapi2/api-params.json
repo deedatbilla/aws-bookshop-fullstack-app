@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "name": "/sendmail",
+      "lambdaFunction": "testapi2",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/sendmail"
+    }
+  ],
+  "resourceName": "testapi2",
+  "apiName": "testapi2",
+  "functionArns": [
+    {
+      "lambdaFunction": "testapi2"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-bookshopappclientsid-dev-122005-authRole",
+    "unAuthRoleName": "amplify-bookshopappclientsid-dev-122005-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "testapi2",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
