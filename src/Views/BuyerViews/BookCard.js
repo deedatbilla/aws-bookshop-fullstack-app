@@ -6,7 +6,7 @@ function BookCard({ item }) {
   const { manageCart, isProductInCart } = useAppContext();
   const { title, price } = item;
   return (
-    <div className="col-md-3">
+    <div className="col-md-3 mb-2">
       <div className="">
         <img
           className="book-thumbnail"

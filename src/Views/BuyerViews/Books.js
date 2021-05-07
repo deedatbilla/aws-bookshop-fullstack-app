@@ -3,7 +3,7 @@ import "./style.css";
 import Amplify, { API, graphqlOperation, Auth } from "aws-amplify";
 import { listBooks } from "../../graphql/queries";
 import BookCard from "./BookCard";
-let dataFetched=false
+
 function Books({ history }) {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -20,24 +20,21 @@ function Books({ history }) {
     const results = books.filter((book) =>
       book.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    
     setSearchResults(
-      !searchTerm ? books.slice(0, 10) : results.length === 0 ? [] : results
+      searchTerm==="" ? books : results.length === 0 ? [] : results
     );
   };
   async function fetchBooks() {
     try {
-        if(dataFetched){
-            return
-        }
+        
       setLoading(true);
       const bookData = await API.graphql(graphqlOperation(listBooks));
       const todos = bookData.data.listBooks.items;
-      console.log(todos);
+    
       setBooks(todos);
-      setSearchResults(todos)
+      // setSearchResults(todos)
       setLoading(false);
-      dataFetched=true
+     
     } catch (err) {
       console.log("error fetching books", err);
       setLoading(false);
@@ -50,7 +47,7 @@ function Books({ history }) {
           <input
             onChange={(e) => setSearchTerm(e.target.value)}
             type="text"
-            placeholder="Search"
+            placeholder="Start typing to search for books"
             className="form-control w-100"
           />
         </div>

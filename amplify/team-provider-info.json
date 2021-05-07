@@ -24,7 +24,7 @@
       "function": {
         "testapi2": {
           "deploymentBucketName": "amplify-bookshopappclientsid-dev-122005-deployment",
-          "s3Key": "amplify-builds/testapi2-4b764632714165425848-build.zip"
+          "s3Key": "amplify-builds/testapi2-594776314471584f6b48-build.zip"
         }
       }
     }
