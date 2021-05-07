@@ -3,7 +3,6 @@ import "./style.css";
 import Amplify, { API, graphqlOperation, Auth } from "aws-amplify";
 import { listBooks } from "../../graphql/queries";
 import BookCard from "./BookCard";
-
 function Books({ history }) {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
