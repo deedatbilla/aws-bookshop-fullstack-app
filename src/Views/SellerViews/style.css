@@ -1,0 +1,19 @@
+.container{
+display: flex;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+
+
+}

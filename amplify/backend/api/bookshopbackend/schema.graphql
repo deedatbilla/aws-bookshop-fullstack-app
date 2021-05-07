@@ -1,0 +1,25 @@
+
+type USER @model {
+  id: ID!
+  username: String!
+  email: String
+  userType: String
+}
+
+type Book @model {
+  id: ID!
+  ownerId:String
+  title: String
+  description: String
+  authur: String
+  price:Float
+  fileurl:String
+  count:Int
+}
+
+type Order @model {
+  id: ID!
+  buyerId:String!
+  items: [Book]
+  
+}
